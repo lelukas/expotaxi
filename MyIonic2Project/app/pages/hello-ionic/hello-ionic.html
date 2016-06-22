@@ -1,0 +1,24 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>ExpoTaxi</ion-title>
+</ion-navbar>
+
+
+<ion-content padding class="getting-started">
+
+  <ion-card *ngFor="let name of names">
+      <ion-card-header>
+        <ion-item>
+            <ion-icon name="car" item-left></ion-icon>
+            <p>{{name}}</p>
+        </ion-item>
+      </ion-card-header>
+    <ion-card-content>
+      <p>Menos de 1 km</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
