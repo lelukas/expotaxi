@@ -4,7 +4,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    templateUrL: 'build/pages/login/login.html'
+    templateUrl: 'build/pages/login/login.html'
 })
 
 export class Login {

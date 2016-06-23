@@ -4,7 +4,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    templateUrL: 'build/pages/cadastro/cadastro.html'
+    templateUrl: 'build/pages/cadastro/cadastro.html'
 })
 
 export class Cadastro {

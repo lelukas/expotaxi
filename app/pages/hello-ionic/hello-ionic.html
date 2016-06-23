@@ -9,7 +9,9 @@
 
 <ion-content padding class="getting-started">
 
-  <ion-card *ngFor="let name of names">
+    <div id="map"></div>
+
+  <ion-card *ngFor="let name of names" (click)="taxiPage($event, item)">
       <ion-card-header>
         <ion-item>
             <ion-icon name="car" item-left></ion-icon>
