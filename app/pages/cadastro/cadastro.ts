@@ -1,12 +1,18 @@
 /**
  * Created by lelukas on 22/06/2016.
  */
-import {Component} from '@angular/core';
+import {Page, NavController,ViewController} from 'ionic-angular';
 
-@Component({
+@Page({
     templateUrl: 'build/pages/cadastro/cadastro.html'
 })
 
 export class Cadastro {
+    static get parameters(){
+        return [[ViewController]]
+    }
 
+    constructor(private nav: NavController){
+
+    }
 }

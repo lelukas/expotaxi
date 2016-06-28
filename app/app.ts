@@ -14,7 +14,7 @@ class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = Cadastro;
+  rootPage: any = Login;
   pages: Array<{title: string, component: any}>;
   
   constructor(
@@ -27,8 +27,6 @@ class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: Hello },
       { title: 'My First List', component: ListPage },
-      { title: 'Login', component: Login},
-      { title: 'Cadastro', component: Cadastro}
     ];
   }
 
