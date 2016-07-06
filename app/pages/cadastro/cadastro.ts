@@ -15,4 +15,16 @@ export class Cadastro {
     constructor(private nav: NavController){
 
     }
+
+    var endereco =
+        {"bairro" : $scope.bairro, "rua": $scope.rua, "estado" : $scope.estado, "cidade" : $scope.cidade, "numero" : $scope.numero};
+
+    var usuario =
+        {"nome" : $scope.nome, idade : $scope.idade, "sexo": $scope.sexo, "login" : $scope.login, "senha" : $scope.pass, endereco : endereco};
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://expotaxi.herokuapp.com/usuario/add", true);
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    xhr.send(JSON.stringify(usuario));
+
 }
